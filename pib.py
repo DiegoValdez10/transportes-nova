@@ -594,11 +594,15 @@ elif page == "📊 Comparativo":
     # Mejor balance (suma de rangos inversos)
     rank_c = sorted(range(5), key=lambda i: costos[i])
     rank_m = sorted(range(5), key=lambda i: mpcts[i], reverse=True)
-    rank_d = sorted(range(5), key=lambda i: durs[i])
+
     scores = [0] * 5
-    for pos, idx in enumerate(rank_c): scores[idx] += pos
-    for pos, idx in enumerate(rank_m): scores[idx] += pos
-    for pos, idx in enumerate(rank_d): scores[idx] += pos
+
+    for pos, idx in enumerate(rank_c):
+        scores[idx] += pos
+
+    for pos, idx in enumerate(rank_m):
+        scores[idx] += pos
+        
     best_balance_idx = scores.index(min(scores))
 
     st.markdown(f"""
