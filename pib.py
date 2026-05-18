@@ -315,7 +315,7 @@ with st.sidebar:
     st.markdown("<hr style='border-color:#2E3E54; margin:16px 0;'>", unsafe_allow_html=True)
     st.markdown(
         "<div style='font-size:0.72rem; color:#5A6A80; text-align:center;'>"
-        "Datos: TransportesNova_CostosSCRUMBAN.xlsx<br>92 Historias · 623 SP</div>",
+        "Datos: TransportesNova_CostosSCRUMBAN.xlsx<br>118 Historias · 623 SP</div>",
         unsafe_allow_html=True
     )
 
@@ -324,7 +324,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────────────────────
 if page == "🏠 Inicio / Resumen":
     st.markdown('<div class="main-title">TransportesNova — Análisis Comparativo de Costos</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-title">92 Historias de Usuario · 623 Story Points · 5 Metodologías Comparadas</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-title">118 Historias de Usuario · 623 Story Points · 5 Metodologías Comparadas</div>', unsafe_allow_html=True)
 
     data, methods = get_resumen_data()
     display_names = {"WSF": "Water Scrum Fall"}
